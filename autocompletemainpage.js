@@ -62,11 +62,11 @@ const observer = new MutationObserver((mutationsList, observer) => {
 						item.style = "display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #eee;";
 						// Modify Results Item Content to include a clickable link
 						item.innerHTML = `
-						<span style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; max-width: 70%;">
-						  <a href="${data.value.link}" target="_blank" style="text-decoration: none; color: #007bff;">${data.match}</a>
-						</span>
-						<span style="display: flex; align-items: center; font-size: 13px; font-weight: 100; text-transform: uppercase; color: rgba(0,0,0,.2);">
-						  ${data.value.niveau}
+<span style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; max-width: 70%;">
+  <a href="${data.value.link}" target="_blank" style="text-decoration: none; color: #595959;">${data.match}</a>
+</span>
+<span style="display: flex; align-items: center; font-size: 13px; font-weight: 300; text-transform: uppercase; color: #595959;">
+  ${data.value.niveau}
 						</span>`;
 					},
 						highlight: true
